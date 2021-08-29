@@ -1,6 +1,9 @@
 const px2rem = require('postcss-px2rem');
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/E-App/'
+    : '/',
   css: {
     loaderOptions: {
       css: {},
